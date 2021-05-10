@@ -1,2 +1,3 @@
-# ocp-internal-registry
-Using the OpenShift Internal Registry
+# Customizing and Using the Internal OCP Registry
+
+*Pending Sync
