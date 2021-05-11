@@ -41,3 +41,5 @@
    vii. `oc -n reg-test get is`
 
 More info: 
+OCP 4.7 Registry Options: https://docs.openshift.com/container-platform/4.7/registry/registry-options.html
+
