@@ -32,13 +32,13 @@
 5. Let's now test access to the registry.
    Remember, it's by 'namespace'/'project' so we'll first create a project, assign our registry-editor role to that project and then push an image into the namespace.
 
-   i. `oc new-project reg-test`
-   ii. `oc -n reg-test policy add-role-to-user registry-editor shaker`
-   iii. `docker pull alpine`
-   iv. `docker tag alpine:latest registry.redcloud.land/reg-test/nginx:latest`
-   v. `docker login -u shaker registry.redcloud.land` # use API token
-   vi. `docker push registry.redcloud.land/reg-test/nginx:latest`
-   vii. `oc -n reg-test get is`
+   i. `oc new-project reg-test` \
+   ii. `oc -n reg-test policy add-role-to-user registry-editor shaker` \
+   iii. `docker pull alpine` \
+   iv. `docker tag alpine:latest registry.redcloud.land/reg-test/nginx:latest` \
+   v. `docker login -u shaker registry.redcloud.land` # use API token \
+   vi. `docker push registry.redcloud.land/reg-test/nginx:latest` \
+   vii. `oc -n reg-test get is` 
 
 More info: 
 OCP 4.7 Registry Options: https://docs.openshift.com/container-platform/4.7/registry/registry-options.html
