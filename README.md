@@ -5,6 +5,7 @@
 ##### Note: The internal registry is primarily used to distribute images throughout a single cluster. Accessing this internal registry for CI could be handy as it integrates with your existing users and groups, however, care should be taken as normal garage collection and clean up of this registry is not automated. It's a great way to start out your test/dev/uat clusters, but do consider an enterprise registry for production - like Nexus, Docker Trusted Registry, Artifactory or Cloud providers like Docker Hub, Red Hat, Azure, Google, AWS and others. Having an external registry allows you to scale across clusters, integrate with more granular authentication practices, perform CV scanning and image analysis, garbage collection and basic hygiene of shared image layers.
 
 ---
+
 1. Expose the route to the internal registry. \
 `oc patch configs.imageregistry.operator.openshift.io/cluster --patch '{"spec":{"defaultRoute":true}}' --type=merge`
 
@@ -43,5 +44,5 @@
    viii. `oc -n reg-test tag -d nginx:latest` # delete the tag
 
 More info: 
-OCP 4.7 Registry Options: https://docs.openshift.com/container-platform/4.7/registry/registry-options.html
-
+OCP 4.7 Registry Options: https://docs.openshift.com/container-platform/4.7/registry/registry-options.html \
+Demo video on YouTube: https://youtu.be/4Y4dyhQT8so 
