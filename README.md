@@ -16,7 +16,7 @@
     ```
     spec:
     routes:
-        - name: public-routes
+      - name: public-routes
         hostname: registry.domain.com
         secretName: public-route-tls
     ```
