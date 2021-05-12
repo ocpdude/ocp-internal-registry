@@ -39,7 +39,8 @@
    iv. `docker tag alpine:latest registry.redcloud.land/reg-test/nginx:latest` \
    v. `docker login -u shaker registry.redcloud.land` # use API token \
    vi. `docker push registry.redcloud.land/reg-test/nginx:latest` \
-   vii. `oc -n reg-test get is` 
+   vii. `oc -n reg-test get is` \
+   viii. `oc -n reg-test tag -d nginx:latest` # delete the tag
 
 More info: 
 OCP 4.7 Registry Options: https://docs.openshift.com/container-platform/4.7/registry/registry-options.html
