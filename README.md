@@ -16,10 +16,10 @@
 `oc edit configs.imageregistry.operator.openshift.io/cluster`
     ```
     spec:
-    routes:
-      - name: public-routes
-        hostname: registry.domain.com
-        secretName: public-route-tls
+      routes:
+        - name: public-routes
+          hostname: registry.domain.com
+          secretName: public-route-tls
     ```
 4. Verify the route was added to the registry. \
 `oc -n openshift-image-registry get route`
